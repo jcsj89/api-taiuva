@@ -22,3 +22,6 @@ https://github.com/mateusfmachado/express-jwt-base-test/blob/master/server.js
 
 // banco
 https://www.devmedia.com.br/entendendo-a-instrucao-join/32936
+
+//excel to json
+https://www.npmjs.com/package/read-excel-file

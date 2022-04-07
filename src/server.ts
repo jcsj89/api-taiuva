@@ -5,6 +5,7 @@ import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import config from './config';
 import routes from './routes';
+import path from 'path';
 
 import './database/connection';
 
@@ -21,7 +22,7 @@ app.use(express.json());
 app.use(cors());
 
 // STATIC FOLDERS
-app.use('/public', express.static(__dirname + '/public'));
+app.use('/public', express.static(path.resolve(__dirname, '..', 'public')));
 
 //DATABASE CONECTION
 const isProduction = config.env === 'production';
