@@ -14,6 +14,7 @@ export default async function (
   if (user && user.isAdmin) {
     console.log('user: ', user);
     console.log('router.path', request.route.path);
+    console.log('router.path', request.route.path);
     return next();
   }
 
