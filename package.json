@@ -55,6 +55,7 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^1.0.4",
     "pg": "^8.7.3",
+    "read-excel-file": "^5.2.28",
     "uuid": "^8.3.2",
     "validator": "^13.7.0"
   }
