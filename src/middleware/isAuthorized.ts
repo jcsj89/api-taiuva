@@ -32,7 +32,6 @@ export default async function (
       console.log('Usuario autorizado');
       console.log('User ID: ', user.id);
       console.log('router.path', request.route.path);
-      console.log('router.path', request.route.path);
       return next();
     }
   }
