@@ -11,16 +11,6 @@ const teste = async () => {
     role_id: roles[1].id,
   };
 
-  // for (const item of resources) {
-  //   console.log('resource id: ', item);
-  //   await connection('role_resource').insert({
-  //     resource_id: item.id,
-  //     role_id: roles[1].id,
-  //   });
-  // }
-  //await connection('user_role').del();
-  //const insert = await connection('user_role').insert(user_role);
-
   const consult = await connection('users')
     .select('users.email', 'roles.role')
     .join('user_role', 'users.id', '=', 'user_id')

@@ -14,8 +14,13 @@ routes.use(userRoleRoutes); // rotas da juncao user e roles
 
 routes.use(excelJsonRoutes);
 
-routes.get('/', (request, response) => {
-  response.json({ message: 'Hello Dev #2' });
+routes.get('/', (_, response) => {
+  response.json({
+    project: 'API Santana',
+    description:
+      'Esta api faz o acesso, permissoes e configuracoes do site do CDP',
+    message: 'Just do it!',
+  });
 });
 
 export default routes;
