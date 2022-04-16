@@ -18,4 +18,6 @@ const teste = async () => {
   console.log(consult);
 };
 teste();
+console.log('classe teste consulta knex');
+
 module.exports = { teste };
