@@ -14,6 +14,11 @@ userRoutes.put(
   isAuthorized,
   userController.update,
 );
-userRoutes.delete('/users/:id', userController.delete);
+userRoutes.delete(
+  '/users/:id',
+  isAuthenticated,
+  isAuthorized,
+  userController.delete,
+);
 
 export default userRoutes;
